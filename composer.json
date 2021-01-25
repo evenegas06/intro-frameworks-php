@@ -1,0 +1,19 @@
+{
+    "name": "eduardovenegasr/intro-frameworks",
+    "description": "Proyecto basico",
+    "authors": [
+        {
+            "name": "Eduardo Venegas Rivera",
+            "email": "evenegas06@hotmail.com"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "App\\": "app/"
+        },
+        "files": [
+            "app/helpers.php"
+        ]
+    }
+}
