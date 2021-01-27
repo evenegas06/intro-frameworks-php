@@ -12,11 +12,16 @@
     <nav class="navbar navbar-expand-lg navbar-light bg-light mb-4">
         <div class="container">
             <a href="/" class="navbar-brand h1">FW</a>
+            <ul class="navbar-nav mr-auto mb-2 mb-lg-0">
+                <li class="nav-item"><a class="nav-link" href="home">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="services">Services</a></li>
+                <li class="nav-item"><a class="nav-link" href="contact">Contact</a></li>
+            </ul>
         </div>
     </nav>
 
     <div class="container">
-        <div class="row">
+        <div class="row justify-content-center">
             <?php echo $content ?>
         </div>
     </div>
