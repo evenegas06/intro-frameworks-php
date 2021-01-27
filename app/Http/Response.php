@@ -20,10 +20,14 @@ class Response {
         
         // función que permite obtener el contenido de ese archivo 
         // por ejemplo: home
-        $content = file_get_contents(__DIR__ . "/../../views/$view.php");
+        // $content = file_get_contents(__DIR__ . "/../../views/$view.php");
 
         // imprime nuestra plantilla con el contenido dentro 
-        require __DIR__ . "/../../views/layout.php";
+        //require __DIR__ . "/../../views/layout.php";
+
+        // aplicando la configuración del archivo helpers.php
+        $content = file_get_contents(viewPath($view));
+        require viewPath('layout');
     }
 }
 
