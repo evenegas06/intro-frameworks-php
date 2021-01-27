@@ -60,7 +60,20 @@ class Request {
             $method
         ]); // función para ejecutar archivos y metodos
         
-        $response->send();
+        // $response->send();
+
+        // Validación extra para asegurar que la respuesta sea una instancia de la clase que estamos esperando 
+        try {
+            if ($response instanceof Response) {
+                $response->send();
+            } else {
+
+                // El backSlash es para que se ejecute la excepción de la raiz y el sistema no entienda que eso vive en las carpetas 
+                throw new \Exception("Error Processins Request");
+            }
+        } catch (\Exception $e) {
+            echo "Details {$e->getMessage()}";
+        }
     }
 }
 
