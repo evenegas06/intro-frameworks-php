@@ -3,6 +3,6 @@
 </div>
 <div class="col-6">
     <p>
-        Eror 404!!
+        Error 404!!
     </p>
 </div>
